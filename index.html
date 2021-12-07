@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Advent of Js Day 1</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <svg id="ring_circle" viewBox="0 0 520 520">
+        <circle
+          id="circle_progress"
+          stroke="#1dd6ff"
+          stroke-width="10"
+          fill="transparent"
+          r="255"
+          cx="260"
+          cy="260"
+        />
+      </svg>
+
+      <div class="border" id="border">
+        <div class="progress" id="progress">
+          <div class="content" id="content">
+            <div class="time">
+              <div class="minutes" id="minutes">0</div>
+              <div class="separator" id="separator">:</div>
+              <div class="seconds" id="seconds">10</div>
+            </div>
+            <div class="buttons">
+              <button type="button" id="start">S T A R T</button>
+              <button type="button" id="setting">
+                <img src="./gear.svg" alt="setting" id="image" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

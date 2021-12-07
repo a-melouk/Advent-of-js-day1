@@ -1,0 +1,109 @@
+/*
+    #00aa51; green
+    #9d0000;red
+*/
+
+@font-face {
+  font-family: "Bebas Neue - Book";
+  src: url(./fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+body {
+  background-color: #3a393f;
+  margin: 0;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+#border {
+  width: 70vh;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: 1/1;
+  box-sizing: border-box;
+}
+.progress {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 7px solid black;
+  background: radial-gradient(
+    71.4% 71.4% at 51.7% 28.6%,
+    #3a393f 0%,
+    #17171a 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.time {
+  margin-top: 10px;
+  margin-top: 20px;
+  margin-top: 50px;
+}
+.minutes,
+.separator,
+.seconds {
+  font-family: "Bebas Neue - Book";
+  font-size: 10rem;
+  color: white;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#start {
+  font-family: "Montserrat";
+  font-size: 20px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: white;
+  margin-bottom: 15px;
+}
+#setting {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+#ring_circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+#circle_progress {
+  stroke-dasharray: 1601.5;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  transition: all 0.1s linear;
+}
